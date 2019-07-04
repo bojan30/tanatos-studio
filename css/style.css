@@ -36,6 +36,11 @@ body{
   overflow: hidden;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /*header*/
 
@@ -119,4 +124,31 @@ body{
 .arrow-wrapper img {
   width: 28px;
   cursor: pointer;
+}
+
+/*services*/
+.services{
+  padding: 2rem 0;
+  color: #3b434c;
+}
+
+.service-box{
+  width: 20%;
+  text-align: center;
+}
+.service-icon{
+  width: 70%;
+  display: inline-block;
+}
+.service-icon img{
+  width: 100%;
+}
+.service-title{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.service-description{
+  font-size: 0.6rem;
 }
