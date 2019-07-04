@@ -1,0 +1,122 @@
+/*reset styles*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+input, button{
+  border: none;
+  outline: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  display: inline-block;
+}
+/*global*/
+
+body{
+  line-height: 1.2;
+  font-family: "Open Sans";
+}
+
+.container{
+  margin: auto;
+  width: 60%;
+  overflow: hidden;
+}
+
+
+/*header*/
+
+.header{
+  background-image: url('../images/header-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.4rem 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;
+  height: 4rem; */
+}
+/* .logo{
+  width: 20%;
+} */
+.logo img{
+  height: 12px;
+}
+.menu{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu span{
+  color: #fff;
+  margin-right: 0.4rem;
+}
+.menu img{
+  height: 12px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+}
+.hero .hero-title{
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hero .hero-title span{
+  color: #f7600e;
+}
+.hero .hero-description{
+  color: #fff;
+  font-size: 0.8rem;
+}
+.hero-actions{
+  margin-top: 2rem;
+}
+.btn{
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn:hover{
+  background-color: #f7600e;
+  border: 1px solid #f7600e;
+}
+
+.arrow-wrapper{
+  text-align: center;
+}
+.arrow-wrapper img {
+  width: 28px;
+  cursor: pointer;
+}
