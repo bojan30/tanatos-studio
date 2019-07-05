@@ -40,6 +40,11 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.flex-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*header*/
 
@@ -118,11 +123,11 @@ body{
   border: 1px solid #f7600e;
 }
 
-.arrow-wrapper{
+.arrow-down-wrapper{
   text-align: center;
 }
-.arrow-wrapper img {
-  width: 28px;
+.arrow-down-wrapper img {
+  width: 24px;
   cursor: pointer;
 }
 
@@ -194,7 +199,7 @@ body{
    color: #3b434c;
    font-size: 0.8rem;
    text-align: center;
-   margin-bottom: 0.6rem;
+   margin-bottom: 2rem;
 }
 
 .projects{
@@ -245,4 +250,51 @@ body{
   background-color: #fff;
   color: #f7600e;
   margin-top: 0.4rem;
+}
+.action{
+  margin-top: 2rem;
+  text-align: center;
+}
+.btn-show-more{
+  color: #3b434c;
+  background-color: #fff;
+  border: 0.02rem solid #3b434c;
+}
+
+/*testimonials*/
+
+.testimonials{
+  background-image: url('../images/testimonials-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+}
+.avatar{
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.avatar img{
+  border-radius: 50%;
+}
+.content{
+  margin: 0 3rem;
+  text-align: center;
+}
+.arrow-wrapper{
+  width: 1.2rem;
+}
+.arrow-wrapper img{
+  width: 100%;
+}
+.review-text{
+  font-size: 0.8rem;
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+}
+.author{
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.9rem;
 }
