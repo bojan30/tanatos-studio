@@ -379,7 +379,78 @@ body{
   height: 0.5rem;
   background-color: #9da1a5;
   border-radius: 50%;
+  transition: background-color 0.2s linear;
 }
 .dot-active{
   background-color: #f75b08;
+}
+
+/*contact*/
+
+.contact{
+  padding: 2rem 0;
+  background-image: url("../images/contact-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-title{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.contact-title span{
+  color: #f75b08;  
+}
+.contact-description{
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.form-inputs{
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+.form-inputs input{
+   flex: 1;
+  margin-right: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  color: #3b434c;
+}
+.form-inputs input:last-child{
+  margin-right: 0;
+}
+.textarea-wrapper{
+  margin-bottom: 0.6rem;
+}
+textarea{
+  width: 100%;
+  display: inline-block;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  outline: none;
+  border: none;
+}
+.call-to-action{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-hire-us{
+  background-color: #f7600e;
+  color: #fff;
+  border: 1px solid #f7600e;
+}
+.call-to-action i:nth-child(1){
+  color: #205b9f;
+}
+.call-to-action i:nth-child(2){
+  color: #00ace3;
+}
+.call-to-action i:nth-child(3){
+  color: #ff3921;
 }
