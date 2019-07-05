@@ -40,13 +40,6 @@ body{
   display: flex;
   justify-content: space-between;
 }
-/* .flex-column{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 
 /*header*/
 
@@ -120,7 +113,7 @@ body{
   border: 1px solid rgba(255,255,255,0.2);
 }
 
-.btn:hover{
+.btn-hire-us:hover,.btn-our-work:hover{
   background-color: #f7600e;
   border: 1px solid #f7600e;
 }
@@ -179,4 +172,77 @@ body{
 .subscribe{
   background-color: #f7600e;
   border: 1px solid #f7600e;
+}
+
+/*work*/
+
+.work{
+  padding: 2rem 0;
+  color: #fff;
+}
+.work-title{
+  color: #3b434c;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.work-title span{
+  color: #f75b08;
+}
+
+.work-description{
+   color: #3b434c;
+   font-size: 0.8rem;
+   text-align: center;
+   margin-bottom: 0.6rem;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2%;
+}
+.project{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: auto;
+}
+.project img{
+  width: 100%;
+  display: block;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f75b08;
+  opacity: 0.9;
+  padding: 1rem;
+  transform: translateY(-100%);
+  transition: transform 0.2s linear;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay-title{
+  margin-bottom: 0.4rem;
+}
+.overlay-description{
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.project:hover .overlay{
+  transform: translateY(0%);
+}
+.btn-overlay{
+  padding: 0.4rem;
+  font-size: 0.6rem;
+  background-color: #fff;
+  color: #f7600e;
+  margin-top: 0.4rem;
 }
