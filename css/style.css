@@ -57,6 +57,7 @@ body{
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav{
@@ -464,4 +465,72 @@ textarea{
 .footer p {
   font-size: 0.6rem;
   color: #fff;
+}
+
+/*side menu*/
+
+.side-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  transform: translateX(-100%);
+  padding: 2rem;
+  background-color: rgba(59, 67, 76, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  transition: transform 0.2s linear;
+}
+.side-menu-active{
+  transform: translateX(0%);
+}
+.side-menu-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 2;
+  display: none;
+}
+.overlay-active{
+  display: block;
+}
+.close{
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.side-menu a{
+  margin-bottom: 0.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.side-menu a:hover{
+  color: #f7600e;
+}
+.side-menu a:last-child{
+  margin-bottom: 0;
+}
+.bar{
+  width: 40%;
+  height: 2px;
+  background-color: #f7600e;
+  margin-bottom: 0.6rem;
+}
+.side-bar-social-icons i:nth-child(1){
+  color: #205b9f;
+}
+.side-bar-social-icons i:nth-child(2){
+  color: #00ace3;
+}
+.side-bar-social-icons i:nth-child(3){
+  color: #ff3921;
 }
