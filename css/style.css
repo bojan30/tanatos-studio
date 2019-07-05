@@ -425,7 +425,7 @@ body{
   margin-right: 0;
 }
 .textarea-wrapper{
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 textarea{
   width: 100%;
@@ -453,4 +453,15 @@ textarea{
 }
 .call-to-action i:nth-child(3){
   color: #ff3921;
+}
+
+/*footer*/
+
+.footer{
+  padding: 1rem 0;
+  background-color: #3b434c;
+}
+.footer p {
+  font-size: 0.6rem;
+  color: #fff;
 }
