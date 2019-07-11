@@ -5,7 +5,10 @@ const menuButton = document.querySelector(".menu");
 const sideMenu = document.querySelector(".side-menu");
 const closeSideMenuOverlay = document.querySelector(".side-menu-overlay");
 const times = document.querySelector(".close");
-
+const hireUsBtn = document.querySelector(".btn-hire-us");
+const hireUsModal = document.querySelector(".hire-us-modal");
+const closeModal = document.querySelector(".close-modal");
+const hireUsOverlay = document.querySelector(".hire-us-overlay");
 //listen for a mouseover and add active class to a dot element with the same index
 teamMembersArray.forEach((member,index)=>{
   member.addEventListener('mouseover',()=>{
@@ -41,3 +44,19 @@ function closeSideMenu(){
   closeSideMenuOverlay.classList.remove("overlay-active")
 }
 times.addEventListener("click",closeSideMenu);
+
+//open hire us modal
+
+hireUsBtn.addEventListener("click", openHireUsModal);
+function openHireUsModal(){
+  hireUsModal.classList.add("modal-open");
+}
+
+//close hire us modal
+
+closeModal.addEventListener("click", closeHireUsModal);
+hireUsOverlay.addEventListener("click",closeHireUsModal);
+
+function closeHireUsModal(){
+  hireUsModal.classList.remove("modal-open");
+}

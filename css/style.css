@@ -53,6 +53,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 2rem 0;
   min-height: 100vh;
   display: flex;
@@ -166,6 +167,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 2rem 0;
 }
 .newsletter input{
@@ -269,6 +271,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 2rem 0;
 }
 .avatar{
@@ -533,4 +536,85 @@ textarea{
 }
 .side-bar-social-icons i:nth-child(3){
   color: #ff3921;
+}
+
+/*hire us modal*/
+
+.hire-us-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0,0.4);
+  z-index: 1;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+.modal-open{
+  transform: scale(1);
+  opacity: 1;
+}
+.hire-us-form{
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 4rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0,0.4);
+}
+.hire-us-form-title{
+  text-transform: uppercase;
+  text-align: center;
+  color: #3b434c;
+  margin-bottom: 1.5rem;
+}
+.hire-us-form-title span{
+  color: #f7600e;
+}
+.hire-us-form-description{
+  color: #3b434c;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+.input-group{
+  margin-bottom: 1rem;
+}
+.hire-us-form input,.hire-us-form textarea{
+  border-radius: 0.4rem;
+  border: 1px solid #c4c6c9;
+  padding: 0.8rem;
+  width: 100%;
+}
+.btn-form{
+  padding: 0.8rem;
+  width: 100%;
+  background-color: #f7600e;
+}
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #3b434c;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hire-us-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
